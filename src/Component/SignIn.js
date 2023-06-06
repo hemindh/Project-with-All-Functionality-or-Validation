@@ -9,7 +9,7 @@ import {
 } from "@mui/material";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { useNavigate } from "react-router-dom";
-
+import '../App.css'
 
 
 const defaultTheme = createTheme();
@@ -68,7 +68,7 @@ export default function SignIn() {
         {/* {Object.keys(formErrors).length === 0 && isSubmitting && (
           <Typography className="success-msg">Signed in successfully</Typography>
         )} */}
-        <Container component="main" maxWidth="xs">
+        <Container component="main" maxWidth="xs" className="hh">
           <Box
             sx={{
               marginTop: 8,
@@ -79,9 +79,9 @@ export default function SignIn() {
           />
 
           <Avatar
-            sx={{ m: 1, bgcolor: "secondary.main", margin: "auto" }}
+            sx={{ m: 1, bgcolor: "secondary.main", margin: "auto"}}
           ></Avatar>
-          <Typography component="h1" variant="h5">
+          <Typography component="h1" variant="h5" sx={{ color:"#044963", fontWeight:"bold"}}>
             Sign in
           </Typography>
           <Box
