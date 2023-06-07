@@ -49,8 +49,8 @@ export default function SignIn() {
     }
     if (!values.password) {
       errors.password = "password is Required*";
-    } else if (values.password.length < 4) {
-      errors.password = "Password must be more than 4 characters*";
+    } else if (values.password.length < 5) {
+      errors.password = "Password must be more than 5 characters*";
     }
     return errors;
   };
@@ -79,7 +79,7 @@ export default function SignIn() {
           />
 
           <Avatar
-            sx={{ m: 1, bgcolor: "secondary.main", margin: "auto"}}
+            sx={{ m: 1, bgColor: "secondary.main", margin: "auto"}}
           ></Avatar>
           <Typography component="h1" variant="h5" sx={{ color:"#044963", fontWeight:"bold"}}>
             Sign in
