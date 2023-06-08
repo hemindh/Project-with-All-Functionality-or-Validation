@@ -50,7 +50,7 @@ const UserDashboard = () => {
       </Box>
 
 
-      <Box className="btn">
+      <Box className="btnclick">
         <Button variant="contained" className="c" onClick={handleFormClick}>
           Click !
         </Button>
